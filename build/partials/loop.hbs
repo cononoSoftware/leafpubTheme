@@ -1,0 +1,29 @@
+<div class="row">
+    {{#each posts}}
+
+        <div class="col-xs-12 col-sm-6 col-md-4">
+            <article class="card {{post_class}}">
+
+                <div class="card-height-indicator"></div>
+
+                <div class="card-content">
+
+                    <div class="card-image" style="background-image: url('{{#if image}}{{url image}}{{/if }}')">
+                        <h4 class="card-image-headline"><a href="{{post_url}}" >{{title}}</a></h4>
+                    </div>
+
+                    <div class="card-body">
+                        <p>{{excerpt words="32"}}&nbsp;…</p>
+                    </div>
+
+                    <footer class="card-footer text-right">
+                        <a href="{{post_url}}" class="btn btn-raised btn-default"><i class="glyphicon glyphicon-chevron-right"></i> Weiterlesen</a>
+                    </footer>
+
+                </div>
+
+            </article>
+        </div>
+    {{/each}}
+
+</div>

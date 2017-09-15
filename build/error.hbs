@@ -1,0 +1,16 @@
+{{> header}}
+
+<div class="container">
+    <header class="cover" {{#if @settings.cover}}style="background-image: url('{{url @settings.cover}}');"{{/if}}></header>
+</div>
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 push-md-2 col-sm-10 push-sm-1 text-xs-center">
+            <h2>404 Seite nicht gefunden</h2>
+            <p>Die angeforderte Seite existiert nicht. Bitte prüfen Sie die eingegebene Adresse.</p>
+        </div>
+    </div>
+</div>
+
+{{> footer}}

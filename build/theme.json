@@ -1,0 +1,1 @@
+{"name":"conono-leafpub-theme","description":"Conono LeafPub Theme","version":"1.0.0","requires":"1.1.9","author":"Patric Rudolph <p.rudolph@conono.org>","license":"MIT","url":"https://www.conono.org/","error_templates":{"503":"partials/maintenance.hbs"}}

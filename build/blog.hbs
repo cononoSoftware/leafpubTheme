@@ -1,0 +1,18 @@
+{{> header}}
+
+<div class="container">
+    <header {{#if @settings.cover}}style="background-image: url('{{url @settings.cover}}');"{{/if}}>
+        <p class="headline logo">{{@settings.title}}</p>
+        <p class="subline">{{@settings.tagline}}</p>
+    </header>
+</div>
+
+<hr>
+
+<div class="container">
+    {{> loop }}
+
+    {{> pagination}}
+</div>
+
+{{> footer}}

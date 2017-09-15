@@ -1,0 +1,51 @@
+{{> header}}
+
+{{#post}}
+
+    <div class="container">
+        <header class="post" {{#if image}}style="background-image: url('{{url image}}');"{{/if}}></header>
+
+        <article class="article {{post_class}}">
+            <h1 class="title">{{title editable="true"}}</h1>
+
+            <div class="description">
+
+                <p>
+                    {{tags before="<span class='label label-info'>#"
+                           separator="</span> <span class='label label-info'>#"
+                           and="</span> <span class='label label-info'>#"
+                           after="</span>"
+                    }}
+                </p>
+
+            </div>
+
+            <div class="content">
+                {{content editable="true"}}
+
+                {{#author}}
+                    <p>
+                        <a href="{{author_url}}">{{name}}</a>
+                        {{#if location}} ({{location}}){{/if}},
+                        {{date format="%e. %B %Y"}}
+                    </p>
+                {{/author}}
+            </div>
+
+
+            <div class="post-pagination">
+                {{#previous_post}}
+                    <p class="pull-left"><a class="btn btn-raised" href="{{post_url}}">Vorheriger Artikel</a></p>
+                {{/previous_post}}
+
+                {{#next_post}}
+                    <p class="pull-right">
+                        <a class="btn btn-raised" href="{{post_url}}">Nächster Artikel</a>
+                    </p>
+                {{/next_post}}
+            </div>
+        </article>
+    </div>
+{{/post}}
+
+{{> footer}}
