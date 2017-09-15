@@ -1,0 +1,42 @@
+article.article {
+  background-color: @color-conono-white;
+  padding: @grid-gutter-width /2;
+
+  box-shadow:
+          0 8px 17px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  font-size: 18px;
+
+
+  .description {
+    .label {
+      a {
+        color: inherit;
+      }
+    }
+  }
+
+  .content {
+    margin: @grid-gutter-width / 2;
+
+    img {
+      width: 100%;
+      height: auto;
+      padding: 5px;
+    }
+
+    figure {
+      width: 100%;
+
+      figcaption {
+        margin-bottom: @grid-gutter-width;
+        font-size: 0.9em;
+      }
+    }
+  }
+
+  .post-pagination {
+    overflow: auto;
+  }
+}

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{@meta.title}}</title>
+    <meta name="description" content="{{@meta.description}}">
+
+    <link rel="stylesheet" href="{{theme_url 'css/conono.###BUILDDATE###.css'}}" />
+
+    {{#if @settings.logo}}
+        <style>
+            .logo:before {background-image: url("{{url @settings.logo}}");}
+        </style>
+    {{/if}}
+
+    {{leafpub_head}}
+</head>
+
+<body class="{{body_class}}">
+
+<div class="container">
+    {{> navigation}}
+</div>

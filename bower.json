@@ -1,0 +1,15 @@
+{
+  "name": "conono-leafpub-theme",
+  "description": "Conono LeafPub Theme",
+  "main": "gulpfile.js",
+  "authors": [
+    "Patric Rudolph <p.rudolph@conono.org>"
+  ],
+  "license": "MIT",
+  "homepage": "https://www.conono.org/",
+  "private": true,
+  "dependencies": {
+    "bootstrap-material-design": "0.5.10",
+    "cookieconsent": "3.0.4"
+  }
+}

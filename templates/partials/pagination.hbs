@@ -1,0 +1,27 @@
+{{!-- Switch to the pagination context --}}
+{{#pagination}}
+    {{#is total_pages '>' 1}}
+
+        <div class="post-pagination">
+
+            {{#is total_pages '>' 1}}
+                <div class="text-center">
+                    Seite {{number current_page}} von {{number total_pages}}
+                </div>
+            {{/is}}
+
+            {{#if previous_page_url}}
+                <p class="pull-left">
+                    <a class="btn btn-raised" href="{{previous_page_url}}">Neuere Beiträge</a>
+                </p>
+            {{/if}}
+
+            {{#if next_page_url}}
+                    <p class="pull-right">
+                        <a class="btn btn-raised" href="{{next_page_url}}">Ältere Beiträge</a>
+                    </p>
+            {{/if}}
+
+        </div>
+    {{/is}}
+{{/pagination}}

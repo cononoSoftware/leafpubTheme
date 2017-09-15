@@ -1,0 +1,36 @@
+{
+  "name": "conono-leafpub-theme",
+  "version": "1.0.0",
+  "description": "Conono LeafPub Theme",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patric Rudolph <p.rudolph@conono.org>",
+  "license": "MIT",
+  "devDependencies": {
+    "bower": "1.8.0",
+    "gulp": "3.9.1",
+    "gulp-concat": "2.6.1",
+    "gulp-concat-css": "2.3.0",
+    "gulp-css-base64": "1.3.4",
+    "gulp-cssmin": "0.2.0",
+    "gulp-less": "3.3.2",
+    "gulp-string-replace": "0.4.0",
+    "gulp-strip-css-comments": "1.2.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-watch": "4.3.11",
+    "merge2": "1.0.3",
+    "gulp-archiver": "1.0.0",
+    "gulp-gzip": "1.4.0"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cononoSoftware/leafpubTheme.git"
+  },
+  "bugs": {
+    "url": "https://github.com/cononoSoftware/leafpubTheme/issues"
+  },
+  "homepage": "https://www.conono.org/"
+}

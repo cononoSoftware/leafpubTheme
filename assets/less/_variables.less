@@ -1,0 +1,115 @@
+@color-conono-blue: #0068ae;
+@color-conono-grey: #bdc3c7;
+@color-conono-orange: #f58b1c;
+@color-conono-yellow: #f2c500;
+@color-conono-green-light: #8cc63f;
+@color-conono-green-dark: #7eaf2f;
+@color-conono-black: #2b3e51;
+@color-conono-grey-dark: #33495f;
+@color-conono-white: white;
+
+@color-text: fade(@color-conono-black, 85%);
+@color-text-inverted: fade(@color-conono-white, 85%);
+
+@grid-gutter-width: 30px;
+
+@line-height-base: 1.428571429;
+@line-height-base-px: @line-height-base * 10px;
+
+@screen-xs: 480px;
+@screen-sm: 768px;
+@screen-md: 992px;
+@screen-lg: 1200px;
+
+body, h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4 {
+  font-family: 'Exo', 'Helvetica', 'Arial', sans-serif;
+}
+
+body {
+  font-size: 16px;
+  color: @color-text;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4 {
+  font-weight: bold;
+  color: @color-conono-blue;
+}
+
+h1, .h1 {
+  font-size: 5vw;
+
+  @media (min-width: @screen-sm) {
+    font-size: 3vw;
+  }
+
+  @media (min-width: @screen-md) {
+    font-size: 2.5vw;
+  }
+
+  @media (min-width: @screen-lg) {
+    font-size: 2em;
+  }
+}
+
+h2, .h2 {
+  font-size: 5vw;
+
+  @media (min-width: @screen-xs) {
+    font-size: 4.5vw;
+  }
+
+  @media (min-width: @screen-sm) {
+    font-size: 2.5vw;
+  }
+
+  @media (min-width: @screen-md) {
+    font-size: 2vw;
+  }
+
+  @media (min-width: @screen-lg) {
+    font-size: 1.75em;
+  }
+}
+
+h3, .h3 {
+  font-size: 5vw;
+
+  @media (min-width: @screen-xs) {
+    font-size: 4vw;
+  }
+
+  @media (min-width: @screen-sm) {
+    font-size: 2vw;
+  }
+
+  @media (min-width: @screen-md) {
+    font-size: 1.5vw;
+  }
+
+  @media (min-width: @screen-lg) {
+    font-size: 1.5em;
+  }
+}
+
+h4, .h4 {
+  font-size: 5vw;
+
+  @media (min-width: @screen-xs) {
+    font-size: 3.5vw;
+  }
+
+  @media (min-width: @screen-sm) {
+    font-size: 1.5vw;
+  }
+
+  @media (min-width: @screen-md) {
+    font-size: 1vw;
+  }
+
+  @media (min-width: @screen-lg) {
+    font-size: 1.25em;
+  }
+}

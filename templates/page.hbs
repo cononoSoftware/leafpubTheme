@@ -1,0 +1,19 @@
+{{> header}}
+
+{{#post}}
+    <div class="container">
+        <header class="post" {{#if image}}style="background-image: url('{{url image}}');"{{/if}}></header>
+
+        <article class="article {{post_class}}">
+            <h1 class="title">{{title editable="true"}}</h1>
+
+            <div class="content">
+                {{content editable="true"}}
+
+            </div>
+
+        </article>
+    </div>
+{{/post}}
+
+{{> footer}}

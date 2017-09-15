@@ -1,0 +1,68 @@
+header {
+  height: 400px;
+  background-color: @color-conono-blue;
+  background-size: contain;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  margin-bottom: @grid-gutter-width;
+  position: relative;
+
+  box-shadow:
+          0 8px 17px 0 rgba(0, 0, 0, 0.2),
+          0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  p {
+    text-align: center;
+    color: @color-conono-white;
+    position: absolute;
+    left: 0;
+    right: 0;
+
+
+    &.headline {
+      font-size: 3em;
+      top: 30%;
+
+      @media (min-width: @screen-xs) {
+        font-size: 4em;
+      }
+
+      @media (min-width: @screen-md) {
+        font-size: 5em;
+        top: 15%;
+      }
+
+
+    }
+
+    &.subline {
+      top: 55%;
+      font-size: 1em;
+
+      @media (min-width: @screen-md) {
+        font-size: 1.25em;
+        top: 40%;
+      }
+    }
+  }
+
+  &.post {
+    margin-top: @grid-gutter-width;
+    height: 0;
+    padding-top: 50%;
+  }
+}
+
+.logo {
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    vertical-align: sub;
+    margin-right: 0.1em;
+  }
+}

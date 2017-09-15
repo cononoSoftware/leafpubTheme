@@ -1,0 +1,24 @@
+{{> header}}
+
+
+<div class="container">
+    {{#tag}}
+    <header class="post" {{#if cover}}style="background-image: url('{{url cover}}');"{{/if}}></header>
+
+
+
+        <h1 class="title">#{{name}}</h1>
+
+        <div class="content">
+            {{description}}
+        </div>
+
+{{/tag}}
+
+    {{> loop}}
+
+    {{> pagination}}
+
+</div>
+
+{{> footer}}

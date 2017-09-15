@@ -1,0 +1,22 @@
+{{> header}}
+
+<div class="container">
+    {{#author}}
+        <h3 class="alternativeTitle">
+            {{name}}
+
+            <small>
+                {{plural ../pagination.total_items
+                         none="Keine Beiträge"
+                         singular="Ein Beitrag post"
+                         plural="% Beiträge"}}
+            </small>
+        </h3>
+    {{/author}}
+
+    {{> loop}}
+
+    {{> pagination}}
+</div>
+
+{{> footer}}

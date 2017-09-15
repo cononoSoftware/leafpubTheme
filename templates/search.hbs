@@ -1,0 +1,28 @@
+{{> header}}
+
+<div class="container">
+    {{#if query}}
+        <h3 class="alternativeTitle">
+            {{@meta.title}}
+            <small>
+                {{plural pagination.total_items none="Keine Ergebnisse" singular="Ein Ergebnis gefunden" plural="% Ergebnisse gefunden"}}
+            </small>
+        </h3>
+    {{else}}
+        <h3 class="searchtitle">
+            {{L 'search' }}
+            <small>
+                Was suchen Sie?
+            </small>
+        </h3>
+
+        {{> search-form }}
+    {{/if}}
+
+    {{#if query}}
+        {{> loop}}
+        {{> pagination}}
+    {{/if}}
+</div>
+
+{{> footer}}
