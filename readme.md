@@ -13,7 +13,7 @@
 cd content/themes/conono
 npm install
 bower install
-gulp
+gulp build:release
 ```
 
 **Theme-Development**
